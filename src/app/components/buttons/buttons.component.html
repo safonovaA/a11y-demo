@@ -1,0 +1,23 @@
+<h2>Buttons</h2>
+<div class="buttons-block">
+  <h3>With text</h3>
+  <app-native-btn [withIcon]="false" (nativeClick)="onClick($event)"></app-native-btn>
+  <button mat-button (click)="onClick(matBtn)">Click me!</button>
+</div>
+<div class="buttons-block">
+  <h3>With Icons</h3>
+  <app-native-btn [withIcon]="true" (nativeClick)="onClick($event)"></app-native-btn>
+  <button mat-button (click)="onClick(matIconBtn)">
+    <mat-icon>home</mat-icon>
+  </button>
+</div>
+<div class="buttons-block">
+  <h3>Custom buttons</h3>
+  <app-custom-btn-non (badClick)="onClick($event)"></app-custom-btn-non>
+  <app-custom-btn (goodClick)="onClick($event)"></app-custom-btn>
+</div>
+<div *ngIf="message">
+  {{message.text}}.
+  <span class="label">label: {{message.label}}&nbsp;</span>
+  <span class="role">role: {{message.role}}</span>
+</div>

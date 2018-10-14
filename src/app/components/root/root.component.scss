@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(36, 33, 189);
+  color: #fff;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  a {
+    display: block;
+    padding: 0 1rem;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    border: 2px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+  }
+  .active-link {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+main {
+  padding: 2rem;
+}
