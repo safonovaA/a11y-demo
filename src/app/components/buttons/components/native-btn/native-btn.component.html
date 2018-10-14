@@ -1,0 +1,4 @@
+<button *ngIf="!withIcon" (click)="onClick()">Click me!</button>
+<button *ngIf="withIcon" (click)="onClick()" aria-label="Click me">
+  <mat-icon>home</mat-icon>
+</button>
