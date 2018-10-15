@@ -1,3 +1,8 @@
-<p>
-  listboxes works!
-</p>
+<app-native-select [options]="optionValues"></app-native-select>
+<mat-form-field>
+  <mat-select placeholder="Choose a drink">
+    <mat-option *ngFor="let option of optionValues" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,5 +1,6 @@
 @import '~@angular/cdk/_a11y.scss';
-
+@import "~@angular/material/theming";
+@include mat-core();
 @include cdk-a11y();
 
 * {

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listboxes.component.scss']
 })
 export class ListboxesComponent implements OnInit {
-
+  public optionValues = ['water', 'tea', 'coffee', 'beer'];
   constructor() { }
 
   ngOnInit() {
