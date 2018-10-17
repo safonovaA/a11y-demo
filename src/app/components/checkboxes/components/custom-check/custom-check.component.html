@@ -1,0 +1,6 @@
+<h4 id="id-group-label">Sandwich Condiments</h4>
+<div role="group" aria-labelledby="id-group-label">
+  <ul class="checkboxes">
+    <app-checkbox *ngFor="let option of sandwiches" [option]="option" (change)="check($event)"></app-checkbox>
+  </ul>
+</div>

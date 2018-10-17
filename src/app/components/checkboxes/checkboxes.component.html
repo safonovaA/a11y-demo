@@ -1,0 +1,15 @@
+<h2>Checkboxes</h2>
+<div class="block">
+  <h3>Native</h3>
+  <app-native-check (nativeCheck)="check($event)"></app-native-check>
+</div>
+<div class="block">
+  <h3>Custom</h3>
+  <app-custom-check (customCheck)="check($event)"></app-custom-check>
+</div>
+<div *ngIf="message">
+  {{message.text}}.
+  <span class="label">label: {{message.label}}&nbsp;</span>
+  <span class="role">role: {{message.role}}</span>
+  <span class="state"> checked: {{message.checked}}</span>
+</div>
