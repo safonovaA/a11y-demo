@@ -20,6 +20,11 @@ import { ListboxesComponent } from './components/listboxes/listboxes.component';
 import { NativeSelectComponent } from './components/listboxes/native-select/native-select.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogsComponent } from './components/dialogs/dialogs.component';
+import { CheckboxesComponent } from './components/checkboxes/checkboxes.component';
+import { NativeCheckComponent } from './components/checkboxes/components/native-check/native-check.component';
+import { CustomCheckComponent } from './components/checkboxes/components/custom-check/custom-check.component';
+import { CheckboxComponent } from './components/checkboxes/components/custom-check/checkbox/checkbox.component';
 
 const routes = [
   {
@@ -28,6 +33,7 @@ const routes = [
     children: [
       { path: 'buttons', component: ButtonsComponent },
       { path: 'listboxes', component: ListboxesComponent },
+      { path: 'checkboxes', component: CheckboxesComponent },
     ]
   },
 ];
@@ -42,6 +48,11 @@ const routes = [
     CustomBtnComponent,
     ListboxesComponent,
     NativeSelectComponent,
+    DialogsComponent,
+    CheckboxesComponent,
+    NativeCheckComponent,
+    CustomCheckComponent,
+    CheckboxComponent,
   ],
   imports: [
     CommonModule,

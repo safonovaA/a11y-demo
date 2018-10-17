@@ -1,5 +1,6 @@
 @import '~@angular/cdk/_a11y.scss';
 @import "~@angular/material/theming";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @include mat-core();
 @include cdk-a11y();
 
@@ -18,4 +19,15 @@ h2 {
 
 h3 {
   margin-bottom: 0.75rem;
+}
+
+.label {
+  font-style: italic;
+  color: rgb(13, 102, 32);
+}
+.role {
+  color: rgb(29, 12, 128);
+}
+.state {
+  color: rgb(192, 24, 102);
 }
